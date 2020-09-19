@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 144.304 sec <<< FAILURE! - in TestSuite
+verifyTitle(com.fullstack.batch3.AppTest)  Time elapsed: 11.276 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Home] but found [Log In ‹ — WordPress]
+	at com.fullstack.batch3.AppTest.verifyTitle(AppTest.java:35)
+
+loginWithCorrectCredentials(com.fullstack.batch3.AppTest)  Time elapsed: 65.976 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Log In')] (tried for 60 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Log In')]"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'PAVILIONG4', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bb8f24bfde9d9626f9ef65ed0b67f3c7
+*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}
+
